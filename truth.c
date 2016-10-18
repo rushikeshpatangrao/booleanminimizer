@@ -46,9 +46,7 @@ void on_popup_clicked (GtkButton* widget, GtkWidget* pWindow) {
 	gtk_window_set_title (GTK_WINDOW (popup_window), "Pop Up window");
 	gtk_container_set_border_width (GTK_CONTAINER (popup_window), 10);
 	gtk_window_set_resizable (GTK_WINDOW (popup_window), TRUE);
-	gtk_window_set_decorated (GTK_WINDOW (popup_window), TRUE);
-	gtk_window_set_skip_taskbar_hint (GTK_WINDOW (popup_window), TRUE);
-	gtk_window_set_skip_pager_hint (GTK_WINDOW (popup_window), TRUE);
+
 	gtk_widget_set_size_request (popup_window, 600, 800);
 	gtk_window_set_transient_for (GTK_WINDOW (popup_window), GTK_WINDOW (pWindow));
 	gtk_window_set_position (GTK_WINDOW (popup_window), GTK_WIN_POS_CENTER);
